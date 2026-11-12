@@ -6,10 +6,10 @@ KEVO TUNNEL gives you one place to manage proxy profiles, start or stop a connec
 
 - **Product site:** [ktunnel.vercel.app](https://ktunnel.vercel.app)
 - **Downloads:** [GitHub Releases](https://github.com/DevKevo25/KTunnel/releases)
-- **Linux source:** [DevKevo25/KEVONET](https://github.com/DevKevo25/KEVONET)
-- **Windows source:** [DevKevo25/KT_WIN](https://github.com/DevKevo25/KT_WIN)
+- **Linux source (private):** [DevKevo25/KEVONET](https://github.com/DevKevo25/KEVONET)
+- **Windows source (private):** [DevKevo25/KT_WIN](https://github.com/DevKevo25/KT_WIN)
 
-This repository is the product and release hub. The Linux and Windows clients are maintained in separate source repositories.
+This public repository is the product and release hub. The Linux and Windows clients are maintained in separate private source repositories; source links require authorized GitHub access.
 
 ## Choose a build
 
@@ -69,7 +69,7 @@ No client can guarantee the privacy, speed, or availability of a remote proxy se
 
 ### Linux
 
-The Linux client is built from [KEVONET](https://github.com/DevKevo25/KEVONET) with Node.js, Rust, Go, and the native Tauri/Linux development libraries (including WebKitGTK 4.1, GTK, and the platform indicator and X11 development packages). From the repository root:
+The Linux client is built from the private [KEVONET](https://github.com/DevKevo25/KEVONET) repository. Maintainers with source access need Node.js, Rust, Go, and the native Tauri/Linux development libraries (including WebKitGTK 4.1, GTK, and the platform indicator and X11 development packages). From the repository root:
 
 ```bash
 npm ci
@@ -81,7 +81,7 @@ The daemon build stages the pinned sing-box sidecar and verifies its checksum. S
 
 ### Windows
 
-The Windows client is built from [KT_WIN](https://github.com/DevKevo25/KT_WIN) with Node.js, Go 1.24.x, Rust for `x86_64-pc-windows-msvc`, the Tauri Windows build prerequisites, and NSIS. From the repository root on a Windows build machine:
+The Windows client is built from the private [KT_WIN](https://github.com/DevKevo25/KT_WIN) repository. Maintainers with source access need Node.js, Go 1.24.x, Rust for `x86_64-pc-windows-msvc`, the Tauri Windows build prerequisites, and NSIS. From the repository root on a Windows build machine:
 
 ```powershell
 npm ci
@@ -96,10 +96,10 @@ Both clients use a Tauri 2 desktop shell with a React/TypeScript interface and a
 
 Common API areas include status, profile CRUD and activation, engine stop and HTTPS probe, active connections, and streaming logs. These endpoints are intended for the local desktop integration, not as a public network service.
 
-## Source repositories
+## Source repositories (maintainer access required)
 
-- [KEVONET — Linux client](https://github.com/DevKevo25/KEVONET)
-- [KT_WIN — Windows client](https://github.com/DevKevo25/KT_WIN)
+- [KEVONET — Linux client (private)](https://github.com/DevKevo25/KEVONET)
+- [KT_WIN — Windows client (private)](https://github.com/DevKevo25/KT_WIN)
 - [sing-box — upstream proxy platform](https://github.com/SagerNet/sing-box)
 
 Third-party notices and upstream licensing information are included with the client resources. Review the applicable licenses before redistributing modified builds.
